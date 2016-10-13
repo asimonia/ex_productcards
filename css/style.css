@@ -1,7 +1,18 @@
+
+/* The animation code */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
 article {
 	width: 30%;
 	display: inline-block;
 	border: 1px solid blue;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
 }
 
 article > header h2 {
@@ -19,5 +30,16 @@ article > section p {
 	text-align: justify;
 }
 
+.bold {
+	font-weight: bold;
+}
 
+.available {
+	background-color: grey;
+	color: yellow;
+}
 
+article:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.1);
+}
